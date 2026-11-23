@@ -5,13 +5,15 @@
 Question 9.1 of Johnson and Paparella, Perron similarities and the nonnegative inverse eigenvalue problem, arXiv:2409.07682v4, Section 9, p. 27, has a negative answer for both polyhedral cones and polytopes. For every integer m >= 1 we construct a rational polygon with m+4 edges whose lift to x_0=1 and conical hull are closed under coordinatewise multiplication and contain the all-ones vector. Every vector in the polygonal lift is the spectrum, in a fixed coordinate order, of a symmetric stochastic matrix with a common eigenbasis. Neither set is the complete spectratope or spectracone of any complex 3-by-3 matrix: the diagonal entries and trace obstruct the required facets away from the identity. The five-vertex case already fails these constraints. Cartesian products give full-dimensional counterexamples in every coordinate size n >= 3. With boundary in the source's complex Euclidean space or its first-coordinate affine hyperplane, Conjecture 9.2 also fails: (1,0,...,0) is a boundary stochastic spectrum but is not radially extremal.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24410091](https://doi.org/10.5281/zenodo.24410091)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24410090](https://doi.org/10.5281/zenodo.24410090)
 - License: CC-BY-4.0
 - Version: 2
 - Mathesis record: [jp2025-hadamard-closure](https://mathesis-omega-research.apps.chrono-ai.fun/papers/jp2025-hadamard-closure?version=2)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra. Mathesis, version 2. https://mathesis-omega-research.apps.chrono-ai.fun/papers/jp2025-hadamard-closure?version=2
+Haobo Ma, Wenlin Zhang (2026). A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra. Mathesis, version 2. https://doi.org/10.5281/zenodo.24410091
 
 ## Statement progress
 
