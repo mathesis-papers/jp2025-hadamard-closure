@@ -1,0 +1,439 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[colorlinks=true,allcolors=blue,breaklinks=true]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\cone}{\operatorname{cone}}
+\newcommand{\diag}{\operatorname{diag}}
+\title{A five-vertex negative answer to Johnson and Paparella's\protect\\
+Question 9.1 on Hadamard-closed spectral polyhedra}
+\author{Haobo Ma\\{\small ChronoAI Pte Ltd, Singapore}
+\and Wenlin Zhang\\{\small National University of Singapore}\\
+{\small ChronoAI Pte Ltd, Singapore}}
+\date{November 13, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Question 9.1 of Johnson and Paparella, \emph{Perron similarities and the
+nonnegative inverse eigenvalue problem}, arXiv:2409.07682v4, Section~9,
+p.~27, has a negative answer for both polyhedral cones and polytopes.
+For every integer $m\geq1$ we construct a rational polygon with $m+4$ edges
+whose lift to $x_0=1$ and conical hull are closed under coordinatewise
+multiplication and contain the all-ones vector. Every vector in the polygonal
+lift is the spectrum, in a fixed coordinate order, of a symmetric stochastic
+matrix with a common eigenbasis. Nevertheless neither set is the complete
+spectratope or spectracone of any complex $3\times3$ matrix: such an exact
+representation would constrain the facets away from the identity by its
+three diagonal entries and their trace. The five-vertex case already fails
+these constraints. Cartesian products give full-dimensional counterexamples
+in every coordinate size $n\geq3$. For the complex-Euclidean boundary
+used in that source, its Conjecture~9.2 also fails: the stochastic spectrum
+$(1,0,\ldots,0)$ is a boundary point but is not radially extremal.
+\end{abstract}
+
+\section{The question and the construction}
+For an invertible $n\times n$ complex matrix $S$, put
+\begin{align*}
+ M_S(x)&=S\diag(x)S^{-1},&
+ \mathcal C(S)&=\{x\in\C^n:M_S(x)\geq0\},\\
+ \mathcal P(S)&=\{x\in\mathcal C(S):M_S(x)e=e\},
+\end{align*}
+where $e=(1,\ldots,1)^T$, and $\geq0$ means real and entrywise
+nonnegative. Johnson and Paparella's Question~9.1 asks whether every
+polyhedral cone closed under the Hadamard product $x\circ y=(x_i y_i)_i$
+is a set $\mathcal C(S)$, and likewise whether every Hadamard-closed
+polytope is a set $\mathcal P(S)$ \cite[p.~27]{JP25}.
+The matrix size is the number of coordinates, and equality of sets, rather
+than containment, is required. We give counterexamples to both statements,
+even with an identity element and a common stochastic realization.
+The question begins: ``If $K$ is a polyhedral cone (polytope) that is closed
+with respect to the Hadamard product'', and asks for an invertible $S$
+giving the respective equality.
+
+The real theory of Perron spectratopes was developed in \cite{JP16}; row-cone
+criteria appear in \cite{JP17}. The complex definitions above and their
+Hadamard-closure properties are Definition~4.1 and Theorem~4.4 of
+\cite{JP25}. The characterization of totally extremal ideal Perron
+similarities by character tables in \cite[Corollary~3.4]{AP26} concerns
+matrices already satisfying those additional hypotheses, rather than arbitrary
+Hadamard-closed polyhedra. Character tables provide ideal similarities
+under the group-theoretic hypotheses in \cite{GLP26}.
+
+Fix a positive integer $m$. For $0\leq j\leq m$ define
+\[
+ q_j=\left(\frac{j^2-m^2}{4(j^2+m^2)},
+             -\frac{mj}{2(j^2+m^2)}\right),\qquad
+ r=(1/4,0),\quad t=(0,1/4),\quad h=(1,1).
+\]
+Write
+\[
+ B_m=\{q_0,\ldots,q_m,r,t\},\qquad Q_m=\conv(B_m\cup\{h\}),
+\]
+\[
+ P_m=\{(1,u,v):(u,v)\in Q_m\},\qquad K_m=\cone(P_m).
+\]
+Here $\conv$ denotes convex hull and $\cone$ denotes all finite nonnegative
+linear combinations, including the empty combination $0$.
+We regard $P_m,K_m\subset\R^3$ also as subsets of $\C^3$.
+
+\begin{theorem}\label{thm:main}
+For every integer $m\geq1$, the following hold.
+\begin{enumerate}
+\item $P_m$ is a rational two-dimensional polytope with $m+4$ edges.
+The pointed cone $K_m$ is full-dimensional in $\R^3$ and has $m+4$ facets.
+Both sets are polyhedra in the real-half-space convention on $\C^3$.
+\item Both sets contain $e=(1,1,1)$ and are closed under the Hadamard product.
+\item There is a real invertible matrix $S_0$ with
+$P_m\subset\mathcal P(S_0)$ and $K_m\subset\mathcal C(S_0)$; the
+realizing matrices can all be chosen symmetric.
+\item For every $S\in\operatorname{GL}_3(\C)$,
+$P_m\ne\mathcal P(S)$ and $K_m\ne\mathcal C(S)$.
+\end{enumerate}
+\end{theorem}
+
+\section{Geometry and multiplication}
+Every $q_j$ lies on $u^2+v^2=1/16$ in the closed negative quadrant, and
+$q_0=(-1/4,0)$, $q_m=(0,-1/4)$. In particular, $Q_m$ contains the diamond
+\begin{equation}\label{eq:diamond}
+ D=\conv\{(1/4,0),(0,1/4),(-1/4,0),(0,-1/4)\}
+   =\{(u,v):|u|+|v|\leq1/4\}.
+\end{equation}
+Thus it has nonempty interior. All points in $B_m$ belong to
+$[-1/4,1/4]^2$.
+
+For $0\leq k<m$ put $d_k=m^2+k(k+1)$ and
+\[
+ a_k=\frac{4(m^2-k(k+1))}{d_k},\qquad
+ b_k=\frac{4m(2k+1)}{d_k},\qquad
+ \ell_k(u,v)=1+a_k u+b_k v.
+\]
+Both coefficients are positive. Direct substitution gives the identity
+\begin{equation}\label{eq:slack}
+ \ell_k(q_j)=
+ \frac{2m^2(j-k)(j-k-1)}{d_k(j^2+m^2)}\geq0.
+\end{equation}
+Since $j$ is integral, equality occurs exactly for $j=k,k+1$.
+Also $\ell_k(r),\ell_k(t),\ell_k(h)>0$.
+Consequently $[q_k,q_{k+1}]$ is an exposed edge of $Q_m$.
+The four remaining edges, in cyclic order, have the following supporting
+forms, nonnegative on $Q_m$:
+\[
+\begin{array}{c|c}
+\text{edge}&\text{form}\\ \hline
+{[q_m,r]}&1-4u+4v\\
+{[r,h]}&1-4u+3v\\
+{[h,t]}&1+3u-4v\\
+{[t,q_0]}&1+4u-4v
+\end{array}
+\]
+For the second and third forms, their values at every $q_j$ are at least
+$1/4$, since $u,v\in[-1/4,0]$. For the first form the value is nonnegative,
+and vanishes among the $q_j$ only at $q_m$; for the fourth it vanishes only
+at $q_0$. Substitution at $r,t,h$ gives exactly the displayed endpoint
+equalities. This verifies each asserted supporting edge.
+The $m+4$ distinct generators are therefore all vertices, in the cyclic order
+$q_0,\ldots,q_m,r,h,t$, and these are all the edges.
+
+The intersection of the corresponding supporting half-planes is $Q_m$:
+the listed segments form its closed convex boundary, with every successive
+pair joined at the indicated vertex. Homogenizing their forms gives $K_m$.
+For completeness, these homogeneous inequalities force $x_0\geq0$ by adding
+the first and fourth forms in the table. If $x_0=0$, those two forms give
+$u=v$, and the second gives $u\leq0$; any $\ell_k$ then gives $u\geq0$.
+Thus the only such point is $0$. If $x_0>0$, division by $x_0$ recovers
+$Q_m$. Its edges correspond bijectively to the facets of $K_m$.
+The diamond in \eqref{eq:diamond} shows that the cone spans $\R^3$;
+its positive first coordinate away from zero shows pointedness.
+The equations $\operatorname{Im}x_i=0$, and $x_0=1$ for $P_m$, can each
+be imposed by two real half-spaces. This also verifies the source's
+complex-Euclidean polyhedron convention.
+
+If $p,q\in B_m$, both coordinates of $p\circ q$ have absolute value
+at most $1/16$. Hence $p\circ q\in D\subset Q_m$.
+Since $h\circ p=p$ and $h\circ h=h$, products of all generators of
+$Q_m$ lie in $Q_m$. For convex combinations, bilinearity gives
+\[
+ \left(\sum_i\alpha_i p_i\right)\circ
+ \left(\sum_j\beta_j p_j\right)
+   =\sum_{i,j}\alpha_i\beta_j(p_i\circ p_j),
+ \qquad \sum_{i,j}\alpha_i\beta_j=1.
+\]
+Thus $Q_m$, and therefore $P_m$, is Hadamard-closed. The same identity
+with arbitrary nonnegative coefficients proves closure of $K_m$.
+The lift of $h$ is the identity $e$ in both sets.
+
+\section{A common stochastic realization}
+Let
+\[
+ e=(1,1,1)^T,\quad f=(1,-1,0)^T,\quad g=(1,1,-2)^T,
+ \qquad S_0=[\,e\ f\ g\,].
+\]
+These vectors are orthogonal, with squared norms $3,2,6$, and
+$\det S_0=6$. Therefore
+\begin{equation}\label{eq:matrix}
+ A(u,v)=S_0\diag(1,u,v)S_0^{-1}
+       =\frac{ee^T}{3}+u\frac{ff^T}{2}+v\frac{gg^T}{6}.
+\end{equation}
+This matrix is symmetric and $A(u,v)e=e$. Its potentially smallest entries
+on $[-1/4,1/4]^2$ are bounded by
+\[
+ \frac13\mathbin{\pm}\frac u2+\frac v6\geq\frac16,\qquad
+ \frac13-\frac v3\geq\frac14,\qquad
+ \frac13+\frac{2v}{3}\geq\frac16.
+\]
+Hence $A(p)\geq0$ for $p\in B_m$, while $A(h)=I$.
+The affine dependence in \eqref{eq:matrix} gives $A(u,v)\geq0$ throughout
+$Q_m$. Thus $P_m\subset\mathcal P(S_0)$, and taking nonnegative multiples
+gives $K_m\subset\mathcal C(S_0)$.
+In particular, the obstruction below is to an exact representation, not
+to the realizability of the individual spectra.
+
+\section{The identity-facet obstruction}
+We use the real-half-space interpretation of complex polyhedra; see
+\cite{Klee59} and \cite[Section~3.1]{JP25} for the underlying convex geometry.
+\begin{lemma}\label{lem:facets}
+A full-dimensional polyhedron in a real affine space, defined there by
+$q$ affine inequalities, has at most $q$ facets.
+\end{lemma}
+\begin{proof}
+Discard forms identically zero on the affine space. At a relative interior
+point of a facet, at least one remaining inequality is active, since strict
+inequalities describe an interior point. A nonnegative affine form vanishing
+at a relative interior point of a facet vanishes on the entire facet:
+each sufficiently short segment in that facet through the point has both
+endpoints nonnegative, so its two directional derivatives must be zero.
+Its zero hyperplane therefore supports that facet. A single supporting
+hyperplane cuts out a single face and cannot support two distinct facets.
+Assigning one active form to each facet proves the bound.
+\end{proof}
+
+\begin{lemma}\label{lem:identity}
+Let $T$ be a full-dimensional polytope in a real affine space $H\subset\C^n$
+containing $e$. Suppose that, on $H$, it is defined by the real inequalities
+$L_{ij}(x)\geq0$, where $L_{ij}(x)=(S\diag(x)S^{-1})_{ij}$ for
+some $S\in\operatorname{GL}_n(\C)$.
+At most $n$ facets of $T$ omit $e$. If there are exactly $n$, their
+supporting affine forms, each normalized to have value $1$ at $e$,
+sum to $\sum_kx_k$ on $H$.
+\end{lemma}
+\begin{proof}
+Since $S\diag(e)S^{-1}=I$, an off-diagonal form vanishes at $e$.
+The supporting face it defines, when nontrivial, therefore contains $e$.
+At a relative interior point of a facet omitting $e$, an active nonzero
+form exists by the proof of Lemma~\ref{lem:facets}; that form must be
+diagonal. Each of the $n$ diagonal forms supports at most one facet.
+If all $n$ are needed, each equals the normalized affine form of its
+facet, because $L_{ii}(e)=1$. Finally,
+$\sum_iL_{ii}(x)=\operatorname{tr}(S\diag(x)S^{-1})=\sum_kx_k$.
+\end{proof}
+
+\begin{proof}[Completion of Theorem~\ref{thm:main}]
+For $S\in\operatorname{GL}_3(\C)$ write the nine complex linear forms
+\[
+ L_{ij}(x)=\bigl(S\diag(x)S^{-1}\bigr)_{ij}
+          =\sum_{k=0}^2 S_{ik}(S^{-1})_{kj}x_k
+ \qquad (0\leq i,j\leq2).
+\]
+Work on $H=\{(1,u,v):u,v\in\R\}$. If $K_m=\mathcal C(S)$,
+its section by $H$ is $P_m$. If $P_m=\mathcal P(S)$, use that
+equality directly. In either case the imaginary parts of all entries
+vanish on the relative interior of $P_m$ and hence on all of $H$.
+In the spectratope case the row-sum equations also vanish there and hence
+on $H$. Consequently either proposed representation gives
+\[
+ P_m=\{x\in H:L_{ij}(x)\geq0
+                              \text{ for all }i,j\}.
+\]
+Exactly two edges contain $e$, namely the lifts of $[r,h]$ and $[h,t]$.
+Thus $m+2$ edges omit $e$. For $m\geq2$ this exceeds three,
+contradicting Lemma~\ref{lem:identity}.
+
+For $m=1$, the polygon is the pentagon
+\[
+ Q_1=\conv\{(-1/4,0),(0,-1/4),(1/4,0),(1,1),(0,1/4)\}.
+\]
+The three edge forms away from $h$, normalized at $h$, are
+\[
+ \frac{1+4u+4v}{9},\qquad 1-4u+4v,\qquad 1+4u-4v.
+\]
+At $(u,v)=(0,0)$ their sum is $19/9$, whereas the trace of a
+matrix with ordered eigenvalues $(1,0,0)$ is $1$.
+This contradicts the last assertion of Lemma~\ref{lem:identity}.
+\end{proof}
+
+\begin{corollary}\label{cor:alln}
+For every $n\geq3$ and $m\geq1$, define
+\[
+ P_{m,n}=\{(1,u,v,z_1,\ldots,z_{n-3}):(u,v)\in Q_m,
+                        \ 0\leq z_i\leq1\},\qquad
+ K_{m,n}=\cone(P_{m,n}).
+\]
+These rational unital Hadamard-closed polyhedra have dimensions $n-1$
+and $n$, respectively, and each has $m+2n-2$ relative facets.
+Every point has a nonnegative realization in a common eigenbasis;
+the realizations for $P_{m,n}$ are stochastic. Nevertheless
+$P_{m,n}\ne\mathcal P(S)$ and $K_{m,n}\ne\mathcal C(S)$ for every
+$S\in\operatorname{GL}_n(\C)$.
+\end{corollary}
+\begin{proof}
+The product with the $(n-3)$-cube preserves Hadamard closure and adds
+$2(n-3)$ facets. Its conical hull is pointed, and its facets correspond
+to the product's facets because its first-coordinate section is bounded.
+Put $Z=\diag(z_1,\ldots,z_{n-3})$ and let $b$ be the column vector
+with entries $1-z_i$. The matrix
+\[
+ B(u,v,z)=\begin{pmatrix}
+ A(u,v)&0\\ b e^T/3&Z
+ \end{pmatrix}
+\]
+is nonnegative and stochastic. A common eigenbasis is
+$e_n,(f,0),(g,0)$ followed by the last $n-3$ coordinate vectors;
+the corresponding eigenvalues are $1,u,v,z_1,\ldots,z_{n-3}$.
+Here $e_n$ is the all-ones vector in $\R^n$, while $e,f,g$ in the
+block formula are the three-coordinate vectors used above.
+Scaling $B$ supplies the cone realizations.
+
+As in the theorem, a proposed exact representation restricts on $x_0=1$
+to its $n^2$ real entry inequalities. There are $m+2$ polygonal facets
+away from $e_n$, together with $n-3$ facets $z_i=0$.
+If $m\geq2$, their number $m+n-1$ exceeds $n$.
+For $m=1$, their normalized forms are the three pentagonal forms above
+and the $z_i$. Their sum at $(1,0,\ldots,0)$ is again $19/9$, not $1$.
+Lemma~\ref{lem:identity} excludes both exact representations.
+\end{proof}
+
+\begin{corollary}\label{cor:rhc}
+Let $V_m$ be the $(m+4)\times3$ matrix whose rows are the vertices of
+$P_m$. Then $V_m$ has rank three and is row Hadamard conic in the sense
+of \cite[Definition~2.3]{JP17}: each product of two rows lies in its
+row cone. Its row cone is nevertheless not $\mathcal C(S)$ for any
+$S\in\operatorname{GL}_3(\C)$.
+\end{corollary}
+\begin{proof}
+The row cone is $K_m$, so closure, rank, and nonrepresentation follow
+from Theorem~\ref{thm:main}. This rectangular statement leaves intact the
+square-invertible hypotheses of the row-cone criteria in \cite{JP17}.
+\end{proof}
+
+\begin{corollary}\label{cor:boundary}
+Use the source's notation $\mathrm{SL}_1^n$ for ordered spectra of
+stochastic $n\times n$ matrices with first coordinate $1$, and $E_n$ for
+its radially extremal points: $x\in E_n$ means
+$(1,\alpha x_1,\ldots,\alpha x_{n-1})\notin\mathrm{SL}_1^n$ for all
+$\alpha>1$.
+With boundary taken in the complex affine space
+$H_n^{\C}=\{x\in\C^n:x_0=1\}$, or in $\C^n$ itself,
+\[
+ (1,0,\ldots,0)\in\partial\mathrm{SL}_1^n\setminus E_n
+ \qquad(n\geq2).
+\]
+In particular, Conjecture~9.2, p.~27, fails under this ambient-boundary
+convention for every $n>3$.
+\end{corollary}
+\begin{proof}
+The matrix $e_ne_n^T/n$ is stochastic with ordered spectrum
+$x=(1,0,\ldots,0)$.
+Every real matrix has real trace, so $\mathrm{SL}_1^n$ lies in the
+proper real hyperplane $\operatorname{Im}\sum_kx_k=0$ of $H_n^{\C}$.
+Every neighborhood of $x$ in $H_n^{\C}$ contains
+$(1,i\varepsilon,0,\ldots,0)$ for some nonzero real $\varepsilon$;
+its nonreal trace excludes it from $\mathrm{SL}_1^n$.
+Thus $x$ is on the boundary. Multiplying its zero tail by any $\alpha>1$
+leaves $x$ unchanged, so it is not extremal. The same perturbations
+also establish the boundary assertion in $\C^n$.
+\end{proof}
+The boundary convention matters: the source uses complex-Euclidean
+neighborhoods in its proof of Theorem~3.17, pp.~9--10, and describes
+Conjecture~9.2 as asserting that ``points on the boundary are extremal''.
+The corollary concerns that convention, not an alternative boundary
+relative to a space of conjugation-symmetric lists or to a real spectral
+parameterization.
+
+\section{Coverage and verification}
+The same proof permits arbitrarily many facets in three coordinates. It
+already gives counterexamples at $m=1$; at $m=10$ the construction has
+fourteen facets and agrees with the rational cone in the following Lean source.
+The extra listed vector $(1,0,0)$ is the average of the four lifted axis
+vertices, so it does not change the cone.
+The declaration \texttt{result} in the
+\href{https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean}{pinned Lean source}
+proves the negation of \texttt{claim}, the joint universal converse of
+Question~9.1, using the $m=10$ cone. Its cone decomposition, product closure,
+and ten-distinct-supporting-forms obstruction concern that fixed cone.
+The parameter family, exact facet counts, common stochastic realizations,
+pentagonal trace obstruction, polytope conclusion, and
+Corollaries~\ref{cor:alln}--\ref{cor:boundary} have the written proofs above.
+The accompanying \texttt{verify.py} gives exact rational finite checks of
+the displayed generators, supporting forms, convex-product certificates,
+and stochastic matrix identities, including the pentagon, its cube products,
+and the fixed $m=10$ example.
+
+\begin{center}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.36\linewidth}>{\raggedright\arraybackslash}p{.56\linewidth}@{}}
+\toprule
+Source item&Coverage\\
+\midrule
+Question 9.1, cone part&Answered: no; $K_m$, every $m\geq1$;
+also $K_{m,n}$ for every $n\geq3$.\\
+Question 9.1, polytope part&Answered: no; $P_m$, every $m\geq1$;
+also $P_{m,n}$ for every $n\geq3$.\\
+Theorems 4.4 and 4.6, forward closure and polyhedral properties&
+Prior results cited; the examples have these properties, not their converses.\\
+Definition 4.18 and Theorem 4.22, ideal similarities&
+Prior characterization cited; containment in a spectratope does not imply equality.\\
+Conjecture 9.2, boundary extremality for $n>3$&Refuted (explicit counterexample)
+for the complex ambient boundary; Corollary~\ref{cor:boundary}.\\
+All-size and five-vertex variants&Not posed separately; proved above.\\
+\cite[Definition 2.3]{JP17}, rectangular row Hadamard closure&
+Not posed as a converse; obstruction proved in Corollary~\ref{cor:rhc}.\\
+\cite[Remark 3.4]{JP17}, row realization of every nonnegative spectrum&
+Not covered; no conclusion about that realization question.\\
+\cite[Conjecture 7.1]{GLP26}, totally extremal ideal similarities&
+Prior proof cited: Artemis--Paparella (2026), Corollary 3.4; not reproved here.\\
+\bottomrule
+\end{tabular}
+\end{center}
+The boundary counterexample uses the full stochastic spectral region,
+not the boundary of one of our prescribed polyhedra.
+The earlier real spectratope and row-cone papers \cite{JP16,JP17} and
+the characterization in \cite[Corollary~3.4]{AP26} concern fixed
+similarities or additional ideality and extremality assumptions;
+their statements are not converses for arbitrary Hadamard-closed polyhedra.
+
+\begin{thebibliography}{9}
+\bibitem{Klee59} V. Klee,
+\emph{Some characterizations of convex polyhedra},
+Acta Math. \textbf{102} (1959), 79--107,
+\href{https://doi.org/10.1007/BF02559569}{doi:10.1007/BF02559569}.
+\bibitem{JP16} C. R. Johnson and P. Paparella,
+\emph{Perron spectratopes and the real nonnegative inverse eigenvalue problem},
+Linear Algebra Appl. \textbf{493} (2016), 281--300.
+\href{https://arxiv.org/abs/1508.07400v2}{arXiv:1508.07400v2}.
+\bibitem{JP17} C. R. Johnson and P. Paparella,
+\emph{Row cones, Perron similarities, and nonnegative spectra},
+Linear Multilinear Algebra \textbf{65} (2017), 2124--2130.
+\href{https://arxiv.org/abs/1611.02752v1}{arXiv:1611.02752v1}.
+\bibitem{JP25} C. R. Johnson and P. Paparella,
+\emph{Perron similarities and the nonnegative inverse eigenvalue problem},
+Trans. Amer. Math. Soc. \textbf{378} (2025), 8361--8389,
+\href{https://doi.org/10.1090/tran/9596}{doi:10.1090/tran/9596}.
+Posing text: \href{https://arxiv.org/abs/2409.07682v4}{arXiv:2409.07682v4},
+Definition 4.1, p.~10; Question 9.1 and Conjecture 9.2, p.~27.
+\bibitem{AP26} E. J. Artemis and P. Paparella,
+\emph{On a conjecture concerning totally extremal ideal Perron similarities},
+\href{https://arxiv.org/abs/2606.02865v1}{arXiv:2606.02865v1} (2026).
+\bibitem{GLP26} D. Z. Gershnik, A. J. Lewis and P. Paparella,
+\emph{Character tables are ideal Perron similarities},
+J. Algebra \textbf{694} (2026), 782--800,
+\href{https://doi.org/10.1016/j.jalgebra.2026.02.004}{doi:10.1016/j.jalgebra.2026.02.004}.
+\href{https://arxiv.org/abs/2508.02830v1}{arXiv:2508.02830v1} (2025),
+Conjecture 7.1, p.~21.
+\end{thebibliography}
+\noindent\small\copyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+\end{document}

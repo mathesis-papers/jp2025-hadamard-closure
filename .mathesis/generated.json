@@ -1,0 +1,38 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/jp2025-source-r2/README.md",
+    "manuscript/jp2025-source-r2/metadata.json",
+    "manuscript/jp2025-source-r2/note.tex",
+    "manuscript/jp2025-source-r2/source-manifest.json",
+    "manuscript/jp2025-source-r2/verification.json",
+    "manuscript/jp2025-source-r2/verify.py",
+    "paper.json",
+    "paper.pdf",
+    "source.archive"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "2967b7d372e4ce7148657821d8343053de06d81c5acab2c82b2aae1a19d844b1",
+    "CITATION.cff": "bd0aec043105aae6bf2adb3242db286593968f69d48eaaa4d1aef4cbad72db36",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "ea4690565c282350fae0ae01e79a065acd0d2235a671d2e85411c08ac48c203b",
+    "formalization/nodes.json": "a5f13231e4851f7f52f54f865c105b46623ceeaab835c805a3a23d91b5a9a8ed",
+    "manuscript/jp2025-source-r2/README.md": "00f1d02a15084250381a75cc040a091a0eda28c089c8c93301d22d63f331547b",
+    "manuscript/jp2025-source-r2/metadata.json": "50925dcd9296c01eaf6551ccd176fccbfbc1a017eaed4e70e978c5399e83b692",
+    "manuscript/jp2025-source-r2/note.tex": "36bbfa0d8cd2a02f8efd2dd2a4d5c59ee93e78fcecf197d1378be4be7ba2a08d",
+    "manuscript/jp2025-source-r2/source-manifest.json": "6c77f487cffa5052c1c72b51cb895dd60615459e7f8e97aadf8b96a27ca923d5",
+    "manuscript/jp2025-source-r2/verification.json": "e61abc111dd9532ab9e3abc1bc7204b7277119272ea315fe92e710830f93536d",
+    "manuscript/jp2025-source-r2/verify.py": "23388e2c00a390f328fed559d8a889d0b705fdd42bd390319e993140090435c3",
+    "paper.json": "9c3aacbb5c53c1948b7d1de18d05a0bc69d18146698cf6da737e0afae5ed6dfa",
+    "paper.pdf": "34fc1c0470c9f4cbd9b7c7c02ea3163795d6b169176635c2ecdfaf8b66453ed4",
+    "source.archive": "3367e9c3728cb5f506b87fdbb4122ae86d0350caf367a7b69e2320b6207ed582"
+  },
+  "snapshot_identity": "b65ae10ae51e012e54ccda54643fae8d853062daed7953c40ec8c4e1a5407436"
+}

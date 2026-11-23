@@ -1,0 +1,262 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:jp2025-hadamard-closure:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
+      },
+      "lineage": "collected:jp2025-hadamard-closure:s1",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\R": "\\mathbb R",
+        "\\cone": "\\operatorname{cone}",
+        "\\conv": "\\operatorname{conv}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "jp2025-hadamard-closure",
+      "scope": "in_scope",
+      "statement": "For every integer $m\\geq1$, the following hold.\n\\begin{enumerate}\n\\item $P_m$ is a rational two-dimensional polytope with $m+4$ edges.\nThe pointed cone $K_m$ is full-dimensional in $\\R^3$ and has $m+4$ facets.\nBoth sets are polyhedra in the real-half-space convention on $\\C^3$.\n\\item Both sets contain $e=(1,1,1)$ and are closed under the Hadamard product.\n\\item There is a real invertible matrix $S_0$ with\n$P_m\\subset\\mathcal P(S_0)$ and $K_m\\subset\\mathcal C(S_0)$; the\nrealizing matrices can all be chosen symmetric.\n\\item For every $S\\in\\operatorname{GL}_3(\\C)$,\n$P_m\\ne\\mathcal P(S)$ and $K_m\\ne\\mathcal C(S)$.\n\\end{enumerate}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
+      "toolchain": null,
+      "version": 2,
+      "work": "jp2025-hadamard-closure"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:jp2025-hadamard-closure:2:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
+      },
+      "lineage": "collected:jp2025-hadamard-closure:s2",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\R": "\\mathbb R",
+        "\\cone": "\\operatorname{cone}",
+        "\\conv": "\\operatorname{conv}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "jp2025-hadamard-closure",
+      "scope": "in_scope",
+      "statement": "A full-dimensional polyhedron in a real affine space, defined there by\n$q$ affine inequalities, has at most $q$ facets.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
+      "toolchain": null,
+      "version": 2,
+      "work": "jp2025-hadamard-closure"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:jp2025-hadamard-closure:2:s3",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
+      },
+      "lineage": "collected:jp2025-hadamard-closure:s3",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\R": "\\mathbb R",
+        "\\cone": "\\operatorname{cone}",
+        "\\conv": "\\operatorname{conv}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "jp2025-hadamard-closure",
+      "scope": "in_scope",
+      "statement": "Let $T$ be a full-dimensional polytope in a real affine space $H\\subset\\C^n$\ncontaining $e$. Suppose that, on $H$, it is defined by the real inequalities\n$L_{ij}(x)\\geq0$, where $L_{ij}(x)=(S\\diag(x)S^{-1})_{ij}$ for\nsome $S\\in\\operatorname{GL}_n(\\C)$.\nAt most $n$ facets of $T$ omit $e$. If there are exactly $n$, their\nsupporting affine forms, each normalized to have value $1$ at $e$,\nsum to $\\sum_kx_k$ on $H$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
+      "toolchain": null,
+      "version": 2,
+      "work": "jp2025-hadamard-closure"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:jp2025-hadamard-closure:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
+      },
+      "lineage": "collected:jp2025-hadamard-closure:s4",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\R": "\\mathbb R",
+        "\\cone": "\\operatorname{cone}",
+        "\\conv": "\\operatorname{conv}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "jp2025-hadamard-closure",
+      "scope": "in_scope",
+      "statement": "For every $n\\geq3$ and $m\\geq1$, define\n\\[\n P_{m,n}=\\{(1,u,v,z_1,\\ldots,z_{n-3}):(u,v)\\in Q_m,\n                        \\ 0\\leq z_i\\leq1\\},\\qquad\n K_{m,n}=\\cone(P_{m,n}).\n\\]\nThese rational unital Hadamard-closed polyhedra have dimensions $n-1$\nand $n$, respectively, and each has $m+2n-2$ relative facets.\nEvery point has a nonnegative realization in a common eigenbasis;\nthe realizations for $P_{m,n}$ are stochastic. Nevertheless\n$P_{m,n}\\ne\\mathcal P(S)$ and $K_{m,n}\\ne\\mathcal C(S)$ for every\n$S\\in\\operatorname{GL}_n(\\C)$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
+      "toolchain": null,
+      "version": 2,
+      "work": "jp2025-hadamard-closure"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:jp2025-hadamard-closure:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
+      },
+      "lineage": "collected:jp2025-hadamard-closure:s5",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\R": "\\mathbb R",
+        "\\cone": "\\operatorname{cone}",
+        "\\conv": "\\operatorname{conv}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "jp2025-hadamard-closure",
+      "scope": "in_scope",
+      "statement": "Let $V_m$ be the $(m+4)\\times3$ matrix whose rows are the vertices of\n$P_m$. Then $V_m$ has rank three and is row Hadamard conic in the sense\nof \\cite[Definition~2.3]{JP17}: each product of two rows lies in its\nrow cone. Its row cone is nevertheless not $\\mathcal C(S)$ for any\n$S\\in\\operatorname{GL}_3(\\C)$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
+      "toolchain": null,
+      "version": 2,
+      "work": "jp2025-hadamard-closure"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:jp2025-hadamard-closure:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
+      },
+      "lineage": "collected:jp2025-hadamard-closure:s6",
+      "macros": {
+        "\\C": "\\mathbb C",
+        "\\R": "\\mathbb R",
+        "\\cone": "\\operatorname{cone}",
+        "\\conv": "\\operatorname{conv}",
+        "\\diag": "\\operatorname{diag}"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "jp2025-hadamard-closure",
+      "scope": "in_scope",
+      "statement": "Use the source's notation $\\mathrm{SL}_1^n$ for ordered spectra of\nstochastic $n\\times n$ matrices with first coordinate $1$, and $E_n$ for\nits radially extremal points: $x\\in E_n$ means\n$(1,\\alpha x_1,\\ldots,\\alpha x_{n-1})\\notin\\mathrm{SL}_1^n$ for all\n$\\alpha>1$.\nWith boundary taken in the complex affine space\n$H_n^{\\C}=\\{x\\in\\C^n:x_0=1\\}$, or in $\\C^n$ itself,\n\\[\n (1,0,\\ldots,0)\\in\\partial\\mathrm{SL}_1^n\\setminus E_n\n \\qquad(n\\geq2).\n\\]\nIn particular, Conjecture~9.2, p.~27, fails under this ambient-boundary\nconvention for every $n>3$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
+      "toolchain": null,
+      "version": 2,
+      "work": "jp2025-hadamard-closure"
+    }
+  ]
+}

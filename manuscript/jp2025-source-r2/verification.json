@@ -1,0 +1,516 @@
+{
+  "arithmetic": "exact rational",
+  "status": "PASS",
+  "families": [
+    {
+      "m": 1,
+      "vertices": 5,
+      "facets": 5,
+      "ordered_generator_products": 25,
+      "facets_omitting_identity": 3,
+      "nonrepresentation_certificate": "normalized diagonal trace"
+    },
+    {
+      "m": 2,
+      "vertices": 6,
+      "facets": 6,
+      "ordered_generator_products": 36,
+      "facets_omitting_identity": 4,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 3,
+      "vertices": 7,
+      "facets": 7,
+      "ordered_generator_products": 49,
+      "facets_omitting_identity": 5,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 4,
+      "vertices": 8,
+      "facets": 8,
+      "ordered_generator_products": 64,
+      "facets_omitting_identity": 6,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 5,
+      "vertices": 9,
+      "facets": 9,
+      "ordered_generator_products": 81,
+      "facets_omitting_identity": 7,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 6,
+      "vertices": 10,
+      "facets": 10,
+      "ordered_generator_products": 100,
+      "facets_omitting_identity": 8,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 7,
+      "vertices": 11,
+      "facets": 11,
+      "ordered_generator_products": 121,
+      "facets_omitting_identity": 9,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 8,
+      "vertices": 12,
+      "facets": 12,
+      "ordered_generator_products": 144,
+      "facets_omitting_identity": 10,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 9,
+      "vertices": 13,
+      "facets": 13,
+      "ordered_generator_products": 169,
+      "facets_omitting_identity": 11,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 10,
+      "vertices": 14,
+      "facets": 14,
+      "ordered_generator_products": 196,
+      "facets_omitting_identity": 12,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 11,
+      "vertices": 15,
+      "facets": 15,
+      "ordered_generator_products": 225,
+      "facets_omitting_identity": 13,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 12,
+      "vertices": 16,
+      "facets": 16,
+      "ordered_generator_products": 256,
+      "facets_omitting_identity": 14,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 13,
+      "vertices": 17,
+      "facets": 17,
+      "ordered_generator_products": 289,
+      "facets_omitting_identity": 15,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 14,
+      "vertices": 18,
+      "facets": 18,
+      "ordered_generator_products": 324,
+      "facets_omitting_identity": 16,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 15,
+      "vertices": 19,
+      "facets": 19,
+      "ordered_generator_products": 361,
+      "facets_omitting_identity": 17,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 16,
+      "vertices": 20,
+      "facets": 20,
+      "ordered_generator_products": 400,
+      "facets_omitting_identity": 18,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 32,
+      "vertices": 36,
+      "facets": 36,
+      "ordered_generator_products": 1296,
+      "facets_omitting_identity": 34,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    },
+    {
+      "m": 64,
+      "vertices": 68,
+      "facets": 68,
+      "ordered_generator_products": 4624,
+      "facets_omitting_identity": 66,
+      "nonrepresentation_certificate": "more than three facets omit the identity"
+    }
+  ],
+  "cube_extensions": [
+    {
+      "m": 1,
+      "dimension": 3,
+      "facets": 5,
+      "facets_omitting_identity": 3,
+      "stochastic_eigensystems": 5
+    },
+    {
+      "m": 1,
+      "dimension": 4,
+      "facets": 7,
+      "facets_omitting_identity": 4,
+      "stochastic_eigensystems": 10
+    },
+    {
+      "m": 1,
+      "dimension": 5,
+      "facets": 9,
+      "facets_omitting_identity": 5,
+      "stochastic_eigensystems": 20
+    },
+    {
+      "m": 1,
+      "dimension": 6,
+      "facets": 11,
+      "facets_omitting_identity": 6,
+      "stochastic_eigensystems": 40
+    },
+    {
+      "m": 1,
+      "dimension": 7,
+      "facets": 13,
+      "facets_omitting_identity": 7,
+      "stochastic_eigensystems": 80
+    },
+    {
+      "m": 1,
+      "dimension": 8,
+      "facets": 15,
+      "facets_omitting_identity": 8,
+      "stochastic_eigensystems": 160
+    },
+    {
+      "m": 2,
+      "dimension": 3,
+      "facets": 6,
+      "facets_omitting_identity": 4,
+      "stochastic_eigensystems": 6
+    },
+    {
+      "m": 2,
+      "dimension": 4,
+      "facets": 8,
+      "facets_omitting_identity": 5,
+      "stochastic_eigensystems": 12
+    },
+    {
+      "m": 2,
+      "dimension": 5,
+      "facets": 10,
+      "facets_omitting_identity": 6,
+      "stochastic_eigensystems": 24
+    },
+    {
+      "m": 2,
+      "dimension": 6,
+      "facets": 12,
+      "facets_omitting_identity": 7,
+      "stochastic_eigensystems": 48
+    },
+    {
+      "m": 2,
+      "dimension": 7,
+      "facets": 14,
+      "facets_omitting_identity": 8,
+      "stochastic_eigensystems": 96
+    },
+    {
+      "m": 2,
+      "dimension": 8,
+      "facets": 16,
+      "facets_omitting_identity": 9,
+      "stochastic_eigensystems": 192
+    }
+  ],
+  "pentagon_trace": {
+    "normalized_diagonal_sum_at_100": "19/9",
+    "required_trace_at_100": "1"
+  },
+  "ambient_boundary_examples": [
+    {
+      "dimension": 2,
+      "spectrum": [
+        "1",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 3,
+      "spectrum": [
+        "1",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 4,
+      "spectrum": [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 5,
+      "spectrum": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 6,
+      "spectrum": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 7,
+      "spectrum": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 8,
+      "spectrum": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 9,
+      "spectrum": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    },
+    {
+      "dimension": 10,
+      "spectrum": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "radial_factor": "2",
+      "tail_unchanged": true,
+      "perturbation_trace_imaginary_part": "1/10"
+    }
+  ],
+  "canonical_example": {
+    "m": 10,
+    "lifted_vertices": [
+      [
+        "1",
+        "-1/4",
+        "0"
+      ],
+      [
+        "1",
+        "-99/404",
+        "-5/101"
+      ],
+      [
+        "1",
+        "-3/13",
+        "-5/52"
+      ],
+      [
+        "1",
+        "-91/436",
+        "-15/109"
+      ],
+      [
+        "1",
+        "-21/116",
+        "-5/29"
+      ],
+      [
+        "1",
+        "-3/20",
+        "-1/5"
+      ],
+      [
+        "1",
+        "-2/17",
+        "-15/68"
+      ],
+      [
+        "1",
+        "-51/596",
+        "-35/149"
+      ],
+      [
+        "1",
+        "-9/164",
+        "-10/41"
+      ],
+      [
+        "1",
+        "-19/724",
+        "-45/181"
+      ],
+      [
+        "1",
+        "0",
+        "-1/4"
+      ],
+      [
+        "1",
+        "1/4",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "1/4"
+      ]
+    ],
+    "facet_normals": [
+      [
+        "1",
+        "4",
+        "2/5"
+      ],
+      [
+        "1",
+        "196/51",
+        "20/17"
+      ],
+      [
+        "1",
+        "188/53",
+        "100/53"
+      ],
+      [
+        "1",
+        "22/7",
+        "5/2"
+      ],
+      [
+        "1",
+        "8/3",
+        "3"
+      ],
+      [
+        "1",
+        "28/13",
+        "44/13"
+      ],
+      [
+        "1",
+        "116/71",
+        "260/71"
+      ],
+      [
+        "1",
+        "44/39",
+        "50/13"
+      ],
+      [
+        "1",
+        "28/43",
+        "170/43"
+      ],
+      [
+        "1",
+        "4/19",
+        "4"
+      ],
+      [
+        "1",
+        "-4",
+        "4"
+      ],
+      [
+        "1",
+        "-4",
+        "3"
+      ],
+      [
+        "1",
+        "3",
+        "-4"
+      ],
+      [
+        "1",
+        "4",
+        "-4"
+      ]
+    ]
+  },
+  "scope": "Finite generator, facet, convex-product, stochastic-eigenbasis and normalized-trace identities; the unrestricted parameter families and identity-facet obstruction have written proofs in note.pdf."
+}

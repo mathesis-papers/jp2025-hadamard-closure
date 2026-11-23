@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 92073,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "34fc1c0470c9f4cbd9b7c7c02ea3163795d6b169176635c2ecdfaf8b66453ed4",
+      "sha256": "34fc1c0470c9f4cbd9b7c7c02ea3163795d6b169176635c2ecdfaf8b66453ed4"
+    },
+    "source": {
+      "bytes": 16571,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "3367e9c3728cb5f506b87fdbb4122ae86d0350caf367a7b69e2320b6207ed582",
+      "sha256": "3367e9c3728cb5f506b87fdbb4122ae86d0350caf367a7b69e2320b6207ed582"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Question 9.1 of Johnson and Paparella, Perron similarities and the nonnegative inverse eigenvalue problem, arXiv:2409.07682v4, Section 9, p. 27, has a negative answer for both polyhedral cones and polytopes. For every integer m >= 1 we construct a rational polygon with m+4 edges whose lift to x_0=1 and conical hull are closed under coordinatewise multiplication and contain the all-ones vector. Every vector in the polygonal lift is the spectrum, in a fixed coordinate order, of a symmetric stochastic matrix with a common eigenbasis. Neither set is the complete spectratope or spectracone of any complex 3-by-3 matrix: the diagonal entries and trace obstruct the required facets away from the identity. The five-vertex case already fails these constraints. Cartesian products give full-dimensional counterexamples in every coordinate size n >= 3. With boundary in the source's complex Euclidean space or its first-coordinate affine hyperplane, Conjecture 9.2 also fails: (1,0,...,0) is a boundary stochastic spectrum but is not radially extremal.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 92073,
+      "sha256": "34fc1c0470c9f4cbd9b7c7c02ea3163795d6b169176635c2ecdfaf8b66453ed4",
+      "url": "/api/v1/collected-papers/jp2025-hadamard-closure/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T04:23:21.900306054Z",
+    "record": "jp2025-hadamard-closure",
+    "repository_name": "jp2025-hadamard-closure",
+    "source": {
+      "bytes": 16571,
+      "sha256": "3367e9c3728cb5f506b87fdbb4122ae86d0350caf367a7b69e2320b6207ed582",
+      "url": "/api/v1/collected-papers/jp2025-hadamard-closure/files/source?version=2"
+    },
+    "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T04:23:21.900306054Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "jp2025-hadamard-closure"
+  }
+}
