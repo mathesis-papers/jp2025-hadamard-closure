@@ -30,9 +30,9 @@
     "manuscript/jp2025-source-r2/source-manifest.json": "6c77f487cffa5052c1c72b51cb895dd60615459e7f8e97aadf8b96a27ca923d5",
     "manuscript/jp2025-source-r2/verification.json": "e61abc111dd9532ab9e3abc1bc7204b7277119272ea315fe92e710830f93536d",
     "manuscript/jp2025-source-r2/verify.py": "23388e2c00a390f328fed559d8a889d0b705fdd42bd390319e993140090435c3",
-    "paper.json": "0db9d4f0cad04d76275f4f03e61fcccaf3f31f6bf1d1702402b9538dbf283ecb",
+    "paper.json": "7f407d3e7e3e355c4b81e359c3b4b7542448edcb4f575946882999d7c0a0dcc8",
     "paper.pdf": "34fc1c0470c9f4cbd9b7c7c02ea3163795d6b169176635c2ecdfaf8b66453ed4",
     "source.archive": "3367e9c3728cb5f506b87fdbb4122ae86d0350caf367a7b69e2320b6207ed582"
   },
-  "snapshot_identity": "6501e0ab3fb48fa54e818e00ca0f69ba936b9f19d2ab3663aa6d3ef1986dcf5a"
+  "snapshot_identity": "81075929839e33b9763e648571944821faa66c00e1c1f5875fca0745c9addd75"
 }

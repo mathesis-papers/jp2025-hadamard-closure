@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24410090",
     "current_version": 2,
     "doi": "10.5281/zenodo.24410091",
+    "kind": "note",
     "lean_source": {
       "revision": "e277c80d045570daf43bd03b4e313f7ce457b4e2",
       "url": "https://github.com/the-omega-institute/trureturing/blob/e277c80d045570daf43bd03b4e313f7ce457b4e2/D5/S0/FiniteGeometry/Polytopes/JohnsonPaparellaHadamardPolyhedraRefutation.lean"
@@ -55,10 +56,12 @@
     "title": "A five-vertex negative answer to Johnson and Paparella's Question 9.1 on Hadamard-closed spectral polyhedra",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T04:23:21.900306054Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "jp2025-hadamard-closure"
